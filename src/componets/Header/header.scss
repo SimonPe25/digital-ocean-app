@@ -1,0 +1,538 @@
+$base-radius: 4px;
+
+
+
+.header-container {
+    min-height: 31px;
+    max-height: 31px;
+    background-color: #d7d7d7;
+    border-radius: $base-radius $base-radius 0px 0px;
+
+    &__box-menuromb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__container-first {
+        background-color: red;
+    }
+}
+
+.iconline {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4px;
+        border-radius: $base-radius 0 0 $base-radius;
+        width: 2.05em;
+        height: 1.3em;
+        background-color: white;
+        -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 2s, transform 1s;
+
+        .iconline-icon {
+            fill: #ffffff;
+            stroke: #292928;
+        }
+    }
+
+    .iconline:hover {
+        transition: 0.5c;
+        cursor: pointer;
+        background-color: rgba(93, 93, 93, 0.837);
+        -webkit-transform: rotate(180deg);
+        transform: scale(1.05);
+        .iconline-icon {
+            stroke: #ffffff;
+        }
+    }
+
+.menuromb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4px;
+    border-radius: 0 $base-radius $base-radius 0;
+    width: 2.05em;
+    height: 1.3em;
+    background-color: white;
+    -webkit-transition: width 2s, height 2s, background-color 1s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 1s, transform 1s;
+    cursor: pointer;
+
+    .menuromb-icon {
+        fill: #ffffff;
+        stroke: #292928;
+    }
+}
+
+.menuromb:hover {
+    transition: 0.5c;
+    cursor: pointer;
+    background-color: rgba(93, 93, 93, 0.837);
+    -webkit-transform: rotate(180deg);
+    transform: scale(1.05);
+    .menuromb-icon {
+        stroke: #ffffff;
+    }
+}
+
+
+.menuhalf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 8px;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $base-radius;
+        padding-top: 3px;
+        width: 2.3em;
+        height: 1.3em;
+        cursor: pointer;
+        background-color: white;
+        -webkit-transition: width 2s, height 2s, background-color 1s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 1s, transform 1s;
+
+        .menuhalf-icon {
+            fill: #ffffff;
+            stroke: #292928;
+        }
+    }
+
+    &__icon:hover {
+        transition: 0.5c;
+        background-color: rgba(93, 93, 93, 0.837);
+        transform: scale(1.05);
+        .menuhalf-icon {
+            stroke: #292928;
+        }
+    }
+
+}
+
+.icon {
+    &__red {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.menucircle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3.2px;
+        padding-left: 1px;
+        width: 2.3em;
+        height: 1.3em;
+        border-radius: $base-radius;
+        background-color: white;
+        -webkit-transition: width 2s, height 2s, background-color 1s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 1s, transform 1s;
+        cursor: pointer;
+
+        .menucircle-icon {
+            fill: #ffffff;
+            stroke: #292928;
+        }
+    }
+
+    &__icon:hover {
+        transition: 0.5c;
+        background-color: rgba(93, 93, 93, 0.837);
+        transform: scale(1.05);
+        .menucircle-icon {
+            stroke: #292928;
+        }
+    }
+}
+
+.idelete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.3em;
+        height: 1.3em;
+        border-radius: $base-radius;
+        background-color: white;
+        -webkit-transition: width 2s, height 2s, background-color 1s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 1s, transform 1s;
+        cursor: pointer;
+
+        .idelete-icon {
+            fill: #ffffff;
+            stroke: #292928;
+        }
+    }
+
+    &__icon:hover {
+        transition: 0.5c;
+        background-color: rgba(93, 93, 93, 0.837);
+        transform: scale(1.05);
+        .idelete-icon {
+            stroke: #292928;
+        }
+    }
+}
+
+.pencil {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.3em;
+        height: 1.3em;
+        border-radius: $base-radius;
+        background-color: white;
+        -webkit-transition: width 2s, height 2s, background-color 1s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 1s, transform 1s;
+        cursor: pointer;
+
+        .pencil-icon {
+            fill: #ffffff;
+            stroke: #292928;
+        }
+    }
+    &__icon:hover {
+        transition: 0.5c;
+        background-color: rgba(93, 93, 93, 0.837);
+        transform: scale(1.05);
+        .pencil-icon {
+            stroke: #292928;
+        }
+    }
+
+}
+
+.padlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5px;
+        width: 2.3em;
+        height: 1.3em;
+        border-radius: $base-radius;
+        background-color: white;
+        -webkit-transition: width 2s, height 2s, background-color 1s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 1s, transform 1s;
+        cursor: pointer;
+
+        .padlock-icon {
+            fill: #ffffff;
+            stroke: #292928;
+        }
+    }
+
+    &__icon:hover {
+        transition: 0.5c;
+        background-color: rgba(93, 93, 93, 0.837);
+        transform: scale(1.05);
+        .padlock-icon {
+            stroke: #292928;
+        }
+    }
+}
+
+.lattice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5px;
+        width: 2.3em;
+        height: 1.3em;
+        border-radius: $base-radius;
+        background-color: white;
+        -webkit-transition: width 2s, height 2s, background-color 1s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 1s, transform 1s;
+        cursor: pointer;
+
+        .lattice-icon {
+            fill: #ffffff;
+            stroke: #292928;
+        }
+    }
+
+    &__icon:hover {
+        transition: 0.5c;
+        background-color: rgba(93, 93, 93, 0.837);
+        transform: scale(1.05);
+        .lattice-icon {
+            fill: white;
+            stroke: #292928;
+        }
+    }
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.3em;
+        height: 1.3em;
+        border-radius: $base-radius;
+        background-color: white;
+        -webkit-transition: width 2s, height 2s, background-color 1s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 1s, transform 1s;
+        cursor: pointer;
+
+        .check-icon {
+            fill: #ffffff;
+            stroke: #292928;
+        }
+    }
+
+    &__icon:hover {
+        transition: 0.5c;
+        background-color: rgba(52, 52, 52, 0.837);
+        transform: scale(1.05);
+        .check-icon {
+            fill: white;
+            stroke: #292928;
+        }
+    }
+}
+
+.aa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 6px;
+        width: 2.3em;
+        height: 1.3em;
+        border-radius: $base-radius;
+        background-color: white;
+        -webkit-transition: width 2s, height 2s, background-color 1s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 1s, transform 1s;
+        cursor: pointer;
+
+        .aa-icon {
+            fill: #454543;
+        }
+    }
+    &__icon:hover {
+        transition: 0.5c;
+        background-color: rgba(93, 93, 93, 0.837);
+        transform: scale(1.05);
+        .aa-icon {
+            fill: white;
+        }
+    }
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 3.5px;
+        width: 12.3em;
+        height: 1.3em;
+        border-radius: $base-radius;
+        background-color: white;
+        cursor: pointer;
+
+    }
+
+    &__iconsearch {
+        margin-top: 5px;
+        border-radius: px;
+    }
+
+    &__iconsearch:hover {
+        background: rgba(0, 0, 255, 0.1);
+        scale: 2;
+    }
+
+    &__inputsearch {
+        background-color: rgba(236, 234, 234, 0.324);
+        margin-left: 5px;
+        border: 0px;
+        height: 14px;
+        width: 140px;
+        line-height: normal;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+
+    &__inputsearch:hover {
+        background: #adaef448;
+        border-radius: 5px;
+    }
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 3.5px;
+        padding-top: 6px;
+        width: 2.3em;
+        height: 1.3em;
+        border-radius: $base-radius;
+        background-color: white;
+        -webkit-transition: width 2s, height 2s, background-color 1s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 1s, transform 1s;
+        cursor: pointer;
+    }
+
+    &__icon:hover {
+        transition: 0.5c;
+        background-color: rgba(93, 93, 93, 0.837);
+        transform: scale(1.05);
+    }
+}
+
+.everest {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 3.5px;
+        padding-top: 6px;
+        width: 2.3em;
+        height: 1.3em;
+        border-radius: $base-radius;
+        background-color: white;
+        -webkit-transition: width 2s, height 2s, background-color 1s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 1s, transform 1s;
+        cursor: pointer;
+        .everest-icon {
+            fill: #ffffff;
+            stroke: #292928;
+        }
+    }
+
+    &__icon:hover {
+        transition: 0.5c;
+        background-color: rgba(93, 93, 93, 0.837);
+        transform: scale(1.05);
+        .everest-icon {
+            stroke: #292928;
+        }
+    }
+}
+
+
+.medic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 5px;
+        padding-top: 4px;
+        width: 2.3em;
+        height: 1.3em;
+        border-radius: $base-radius;
+        background-color: white;
+        -webkit-transition: width 2s, height 2s, background-color 1s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 1s, transform 1s;
+        cursor: pointer;
+        .medic-icon {
+            fill: #ffffff;
+            stroke: #292928;
+        }
+    }
+
+    &__icon:hover {
+        transition: 0.5c;
+        background-color: rgba(93, 93, 93, 0.837);
+        transform: scale(1.05);
+        .medic-icon {
+            stroke: #292928;
+        }
+
+    }
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 8px;
+        padding-top: 3px;
+        width: 2.3em;
+        height: 1.3em;
+        border-radius: $base-radius;
+        background-color: white;
+        .arrow-icon {
+            fill: #ffffff;
+            stroke: #292928;
+        }
+    }
+    &__icon:hover {
+        transition: 0.5c;
+        background-color: rgba(93, 93, 93, 0.837);
+        transform: scale(1.05);
+        .arrow-icon {
+            stroke: #292928;
+        }
+
+    }
+}
